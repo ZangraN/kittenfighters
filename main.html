@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="work-space">
+        <div class="user-interface">
+            <div class="user-interface__score-block">
+                <div id="counter" class="score">0</div>
+            </div>
+        </div>
+
+        <button id="click-cat" class="tap-kitty_start"></button>
+
+        <div class="navigation">
+            <div class="warning-popup">
+                <div class="warning-popup__text">Вы уверены, что хотите сбросить счёт?</div>
+                <div class="warning-popup__buttons">
+                    <button id="warning-popup_yes" class="warning-popup__button">Да</button>
+                    <button id="warning-popup_no" class="warning-popup__button">Нет</button>    
+                </div>
+            </div>
+            <button id="reset-score" class="reset-button">Сбросить счёт</button>
+        </div>
+    </div>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

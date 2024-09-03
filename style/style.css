@@ -1,0 +1,224 @@
+/* Reset and base styles  */
+html {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+body {
+  background-color: rgb(5, 0, 32);
+  display: flex;
+}
+
+.work-space {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-top: 80px;
+  width: 600px;
+  height: 800px;
+  border: 3px solid white;
+  border-radius: 30px;
+}
+
+.user-interface {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  width: 70%;
+  border-bottom: 3px solid white;
+}
+
+.score {
+  color: white;
+  font-size: 58px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.tap-kitty_start {
+  display: flex;
+  margin: auto;
+  margin-top: 10px;
+  width: 405px;
+  height: 507px;
+  border: none;
+  background-image: url(/source/kitten-base.png);
+}
+
+.tap-kitty_1 {
+  display: flex;
+  margin: auto;
+  margin-top: 10px;
+  width: 405px;
+  height: 507px;
+  border: none;
+  background-image: url(/source/kitten-armor.png);
+}
+
+.tap-kitty_2 {
+  display: flex;
+  margin: auto;
+  margin-top: 10px;
+  width: 405px;
+  height: 507px;
+  border: none;
+  background-image: url(/source/kitten-neon.png);
+}
+
+.tap-kitty_3 {
+  display: flex;
+  margin: auto;
+  margin-top: 10px;
+  width: 405px;
+  height: 507px;
+  border: none;
+  background-image: url(/source/kitten-ironman.png);
+}
+
+.navigation {
+  margin: auto;
+}
+
+.reset-button {
+  font-weight: 600;
+  padding: 10px 20px;
+  font-size: 24px;
+  border: 3px solid white;
+  border-radius: 10px;
+  color: white;
+}
+.reset-button:hover {
+  background-color: white;
+  color: rgb(5, 0, 32);
+}
+
+.warning-popup {
+  left: 35.5%;
+  top: 50%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  border: 3px solid white;
+  border-radius: 10px;
+  padding: 20px 30px;
+  background-color: rgba(5, 0, 32, 0.76);
+}
+.warning-popup__text {
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+}
+.warning-popup__buttons {
+  margin-top: 20px;
+}
+.warning-popup__button {
+  color: white;
+  font-weight: 600;
+  font-size: 26px;
+  border: 3px solid white;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-right: 20px;
+}
+.warning-popup__button:last-child {
+  margin-right: 0;
+}
+.warning-popup__button:hover {
+  color: rgb(5, 0, 32);
+  background-color: white;
+}
+
+.active {
+  display: flex;
+}/*# sourceMappingURL=style.css.map */
